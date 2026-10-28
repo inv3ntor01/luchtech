@@ -1,0 +1,133 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout>
+  <!-- Copy from code.html sections or create full page -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl border-b border-surface-container-high/60">
+    <div class="max-w-7xl mx-auto px-5 lg:px-10 h-16 flex items-center justify-between gap-4">
+      <a class="flex items-center gap-2.5 group" href="/">
+        <div class="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-surface-container-high/60 border border-surface-container-highest p-0.5 shadow-sm">
+          <img alt="LuchTech" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCltIA2kUgmp4FHJ9XnlI3Ve0nCv5YfJ296GCzHA5G2Dros68g0c_LKvqu5tNjU0wn3gmSxJ6XbQ2oKrxADRdnSSwruqFcCDmG5syfzfBiA06JU4P7CFtjiZ6AZbe8t0akEjgGUwUCOsfaBC9VHxhRDHuYul137TWxzQjJ1Z8ncnKo3HtTjG732Z6wvs51gGHOF7KKnxYUSAnZCgibybhnYLpw6xl23vGelZaG7b0cSxrZTSKrNBmKFEg">
+        </div>
+        <span class="font-mono text-lg font-bold tracking-tight text-white group-hover:text-coral-accent transition-colors">LuchTech</span>
+        <span class="font-mono text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-surface-container-high text-cyan-accent border border-cyan-accent/25">DEV</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-6 font-mono text-xs text-on-surface-variant">
+        <a class="hover:text-white transition-colors" href="/">Home</a>
+        <a class="hover:text-white transition-colors" href="/stack">Stack</a>
+        <a class="hover:text-white transition-colors" href="#contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a class="inline-flex items-center gap-1.5 font-mono text-xs font-bold px-4 py-2 rounded bg-gradient-to-r from-coral-accent via-[#e85d4e] to-[#ea580c] hover:brightness-110 text-white shadow-[0_0_20px_rgba(249,87,56,0.35)] transition-all" href="#contact">
+          <span>Work With Us</span>
+          <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="relative z-10 w-full pt-16">
+    <section class="relative w-full py-28">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+        <div class="flex flex-col gap-3 max-w-2xl">
+          <div class="inline-flex items-center gap-2 font-mono text-xs text-cyan-accent font-semibold tracking-widest uppercase">
+            <span class="w-2 h-2 rounded-full bg-cyan-accent"></span>
+            <span>[PRODUCTION-GRADE TOOLING]</span>
+          </div>
+          <h1 class="font-mono text-3xl sm:text-4xl font-bold text-white tracking-tight leading-tight">Our Stack</h1>
+          <p class="font-sans text-base text-on-surface-variant leading-relaxed">Battle-tested frameworks, databases, caches, and infrastructure deployed to production without lock-in.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-surface-container-low rounded-2xl p-7 border border-surface-container-high flex flex-col justify-between gap-6 hover:border-coral-accent/40 transition-all">
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-xl bg-coral-accent/15 flex items-center justify-center text-coral-accent">
+                  <span class="material-symbols-outlined text-[22px]">layers</span>
+                </div>
+                <span class="font-mono text-[11px] text-coral-accent bg-surface-container px-2 py-0.5 rounded border border-coral-accent/20">APP TIERS</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h3 class="font-mono text-lg font-bold text-white">Frameworks & Apps</h3>
+                <p class="font-sans text-xs text-on-surface-variant leading-relaxed">Turnkey scaffolded runtimes, SSR frontends, CMS suites, and high-performance microservices.</p>
+              </div>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-coral-accent border border-surface-container-highest">Laravel</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-white border border-surface-container-highest">Statamic</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-cyan-accent border border-surface-container-highest">WordPress</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-white border border-surface-container-highest">Next.js</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-coral-accent border border-surface-container-highest">Astro</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-slate-lavender border border-surface-container-highest">Vite</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-emerald-400 border border-surface-container-highest">Docusaurus</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-cyan-accent border border-surface-container-highest">NestJS / FastAPI</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-tertiary border border-surface-container-highest">Django · Axum · Go</span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-surface-container-low rounded-2xl p-7 border border-surface-container-high flex flex-col justify-between gap-6 hover:border-cyan-accent/40 transition-all">
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-xl bg-cyan-accent/15 flex items-center justify-center text-cyan-accent">
+                  <span class="material-symbols-outlined text-[22px]">database</span>
+                </div>
+                <span class="font-mono text-[11px] text-cyan-accent bg-surface-container px-2 py-0.5 rounded border border-cyan-accent/20">DATA CORE</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h3 class="font-mono text-lg font-bold text-white">Databases & Engines</h3>
+                <p class="font-sans text-xs text-on-surface-variant leading-relaxed">Relational and document storage provisioned with high availability, automated backup cycles, and replicas.</p>
+              </div>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-cyan-accent border border-surface-container-highest font-medium">PostgreSQL</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-white border border-surface-container-highest">MySQL</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-coral-accent border border-surface-container-highest">MariaDB</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-emerald-400 border border-surface-container-highest">MongoDB</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-slate-lavender border border-surface-container-highest">SQLite</span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-surface-container-low rounded-2xl p-7 border border-surface-container-high flex flex-col justify-between gap-6 hover:border-slate-lavender/40 transition-all">
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-xl bg-slate-lavender/15 flex items-center justify-center text-slate-lavender">
+                  <span class="material-symbols-outlined text-[22px]">memory</span>
+                </div>
+                <span class="font-mono text-[11px] text-slate-lavender bg-surface-container px-2 py-0.5 rounded border border-slate-lavender/20">FAST IO</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h3 class="font-mono text-lg font-bold text-white">Cache, Search & Storage</h3>
+                <p class="font-sans text-xs text-on-surface-variant leading-relaxed">Ultra-fast in-memory caching, instant typographic search engines, and self-hosted S3 object storage.</p>
+              </div>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-cyan-accent border border-surface-container-highest font-medium">Valkey</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-coral-accent border border-surface-container-highest">Redis</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-white border border-surface-container-highest">Memcached</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-emerald-400 border border-surface-container-highest">Meilisearch</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-slate-lavender border border-surface-container-highest">Typesense</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-cyan-accent border border-surface-container-highest">MinIO</span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-surface-container-low rounded-2xl p-7 border border-surface-container-high flex flex-col justify-between gap-6 hover:border-emerald-400/40 transition-all">
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-xl bg-emerald-400/10 flex items-center justify-center text-emerald-400">
+                  <span class="material-symbols-outlined text-[22px]">cloud_circle</span>
+                </div>
+                <span class="font-mono text-[11px] text-emerald-400 bg-surface-container px-2 py-0.5 rounded border border-emerald-500/20">DEVOPS & K8S</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h3 class="font-mono text-lg font-bold text-white">Cloud, K8s & Infra</h3>
+                <p class="font-sans text-xs text-on-surface-variant leading-relaxed">Sovereign container orchestration without hyperscaler pricing traps or proprietary lock-in.</p>
+              </div>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-cyan-accent border border-cyan-accent/25 font-semibold">LaraKube (k3s)</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-coral-accent border border-surface-container-highest">Hetzner Cloud</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-white border border-surface-container-highest">DigitalOcean</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-slate-lavender border border-surface-container-highest">Google Cloud (GKE)</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-surface-container text-emerald-400 border border-surface-container-highest">Cloudflare DNS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
